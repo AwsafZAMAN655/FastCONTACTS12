@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="Contacts Settings"
+        android:textColor="?attr/colorOnSurface"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <CheckBox
+        android:id="@+id/chkShowEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="Show Email in Contact List" />
+
+    <CheckBox
+        android:id="@+id/chkSortLast"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sort list by last name" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Default country code for messaging apps (e.g., 880)"
+        android:textColor="?attr/colorOnSurfaceVariant"
+        android:textSize="13sp" />
+
+    <EditText
+        android:id="@+id/etCountryCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Country code"
+        android:inputType="number"
+        android:maxLength="4" />
+
+    <Button
+        android:id="@+id/btnSyncSettings"
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Google / Account Sync Settings" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Privacy Guarantee: Fast Contacts contains no internet permission, ads, login requirement, or analytics tracking. All contacts remain in Android system storage."
+        android:textColor="?attr/colorOnSurfaceVariant"
+        android:textSize="12sp" />
+</LinearLayout>
