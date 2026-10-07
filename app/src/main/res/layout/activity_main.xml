@@ -211,6 +211,6 @@
         android:layout_margin="16dp"
         android:contentDescription="Open Dialpad"
         android:src="@android:drawable/ic_menu_call"
-        app:containerColor="?attr/colorPrimaryContainer"
+        app:backgroundTint="?attr/colorPrimaryContainer"
         app:tint="?attr/colorOnPrimaryContainer" />
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
